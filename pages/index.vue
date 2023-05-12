@@ -4,29 +4,48 @@
   </Head>
   <v-app>
     <v-app-bar color="grey-lighten-3">
-      <v-toolbar-title>
-        あなたのためのプログラミング - ut.code(); 第96回五月祭企画
-      </v-toolbar-title>
+      <v-toolbar-title
+        ><span>あなたのためのプログラミング</span
+        ><span class="d-none d-md-flex">
+          - ut.code(); 第96回五月祭企画</span
+        ></v-toolbar-title
+      >
       <v-btn
-        style="text-transform: none"
         prepend-icon="mdi-web"
         href="https://utcode.net"
         target="_blank"
         rel="noopener noreferrer"
+        class="d-none d-sm-flex"
       >
-        <p class="d-none d-sm-block">団体Webサイト</p>
+        <p style="text-transform: none">団体Webサイト</p>
+      </v-btn>
+      <v-btn
+        icon
+        href="https://utcode.net"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="d-sm-none"
+      >
+        <v-icon>mdi-web</v-icon>
       </v-btn>
       <v-btn
         prepend-icon="mdi-vote"
         href="https://gogatsusai.jp/96/visitor/kikaku/476/"
         target="_blank"
         rel="noopener noreferrer"
+        class="d-none d-sm-flex"
       >
-        <p class="d-none d-sm-block">投票する</p>
+        <p style="text-transform: none">投票する</p>
       </v-btn>
-      <!-- <v-btn icon href="#kampa">
-        <v-icon>mdi-cash</v-icon>
-      </v-btn> -->
+      <v-btn
+        icon
+        href="https://gogatsusai.jp/96/visitor/kikaku/476/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="d-sm-none"
+      >
+        <v-icon>mdi-vote</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container class="pa-2">
@@ -399,6 +418,12 @@ import "@mdi/font/css/materialdesignicons.css";
 // ];
 </script>
 <style>
+.v-toolbar-title {
+  font-size: 1.1rem;
+}
+.v-toolbar-title__placeholder {
+  display: flex;
+}
 .v-card {
   margin: 2rem 0;
 }
