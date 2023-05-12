@@ -17,9 +17,9 @@
       >
         <v-icon>mdi-vote</v-icon>
       </v-btn>
-      <v-btn icon href="#kampa">
+      <!-- <v-btn icon href="#kampa">
         <v-icon>mdi-cash</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
     <v-main>
       <v-container class="pa-2">
@@ -230,27 +230,21 @@
             </v-row>
           </v-card-item>
         </v-card>
-
         <!-- <v-card>
-          <v-card-title id="kampa" class="headline">
-            カンパのお願い
-            <v-spacer />
-            <v-icon>mdi-cash</v-icon>
-          </v-card-title>
+          <v-card-title id="kampa"> カンパのお願い </v-card-title>
           <v-card-text>
             <p>
-              第73回駒場祭企画では、お貸しする用のPCのレンタル費・ポスターの印刷費など、費用がかかっております。<br />
-              カンパと言う形で、ご参加いただいた皆さまから少しでも支援いただければ幸いです。
+              第 96
+              回五月祭企画では、お貸しする用のPCのレンタル費・ビラやポスターの印刷費など、費用がかかっております。<br />
+              カンパという形で、ご参加いただいた皆さまから少しでも支援いただければ幸いです。
+              よろしくお願いいたします。
             </p>
-            <p>よろしくお願いいたします。</p>
-            <ul>
-              <li>カンパするか否かと金額については任意です。</li>
-              <li>
-                カンパで集めた金銭は ut.code();
-                が駒場祭をする上でかかった必要経費の補填に充てさせていただきます。
-              </li>
-            </ul>
-            <external-button :url="paypayUrl"> PayPay </external-button>
+            <p>※カンパするか否かと金額については任意です。</p>
+            <p>
+              ※カンパで集めた金銭は ut.code();
+              が五月祭企画を実行する上でかかった必要経費の補填に充てさせていただきます。
+            </p>
+            <v-btn class="ma-2" href="" size="large"> PayPay </v-btn>
             <p>PCからご覧の方は以下の二次元コードを読み取ってください。</p>
             <div justify="center" align="center" width="50%">
               <v-img width="50%" src="/paypay.svg" alt="PayPay二次元コード" />
@@ -258,9 +252,7 @@
           </v-card-text>
         </v-card> -->
         <v-card>
-          <v-card-title id="contact" class="headline">
-            お問い合わせ
-          </v-card-title>
+          <v-card-title id="contact"> お問い合わせ </v-card-title>
           <v-card-item>
             <p>
               問い合わせは contact〜utcode.net
