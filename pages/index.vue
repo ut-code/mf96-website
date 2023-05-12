@@ -1,4 +1,9 @@
 <template>
+  <Head>
+    <Title>
+      ut.code(); 第96回五月祭企画 「あなたのためのプログラミング」
+    </Title>
+  </Head>
   <v-app>
     <v-app-bar>
       <v-toolbar-title>
