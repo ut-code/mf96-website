@@ -19,7 +19,7 @@
           cycle
         >
           <v-carousel-item
-            v-for="key in 1"
+            v-for="key in 6"
             :key="key"
             :src="'/carousel/' + key + '.jpg'"
             cover
