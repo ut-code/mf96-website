@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const title = "ut.code(); 第96回五月祭企画「あなたのためのプログラミング」";
+const title = "あなたのためのプログラミング - ut.code(); 第96回五月祭企画";
 const description =
   "どんどん身近なものとなるプログラミング。誰もがより興味を持てるような企画です。子供も大人も、未経験者も経験者もぜひ！";
 const url = "https://mf96.utcode.net";
