@@ -5,17 +5,26 @@
     </Title>
   </Head>
   <v-app>
-    <v-app-bar>
+    <v-app-bar color="grey-lighten-3">
       <v-toolbar-title>
         ut.code(); 第96回五月祭企画 「あなたのためのプログラミング」
       </v-toolbar-title>
+      <!-- <v-btn
+        style="text-transform: none"
+        prepend-icon="mdi-web"
+        href="https://utcode.net"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ut.code();
+      </v-btn> -->
       <v-btn
-        icon
+        prepend-icon="mdi-vote"
         href="https://gogatsusai.jp/96/visitor/kikaku/476/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <v-icon>mdi-vote</v-icon>
+        投票する
       </v-btn>
       <!-- <v-btn icon href="#kampa">
         <v-icon>mdi-cash</v-icon>
@@ -43,7 +52,7 @@
           cycle
         >
           <v-carousel-item
-            v-for="key in 1"
+            v-for="key in 6"
             :key="key"
             :src="'/carousel/' + key + '.jpg'"
             cover
@@ -62,20 +71,22 @@
               </v-container>
             </v-col>
             <v-col cols="12" md="6">
-              <v-card-title>日時</v-card-title>
               <v-container>
-                <p>5/13 (土), 5/14 (日) 9:00 〜 18:00</p>
-              </v-container>
-              <v-card-title>場所</v-card-title>
-              <v-container>
-                <p>工学部 6 号館 2 階 63 号講義室</p>
+                <v-card-title>日時</v-card-title>
+                <v-alert> 5/13 (土), 5/14 (日) 9:00 〜 18:00 </v-alert>
+                <v-card-title>場所</v-card-title>
+                <v-alert>
+                  <p>工学部 6 号館 2 階 63 号講義室</p>
+                </v-alert>
               </v-container>
             </v-col>
           </v-row>
           <!-- </v-container> -->
         </v-card>
         <v-card>
-          <v-card-title> はじめてのプログラミング教室 </v-card-title>
+          <v-sheet color="grey-lighten-3">
+            <v-card-title> はじめてのプログラミング教室 </v-card-title>
+          </v-sheet>
           <v-card-item>
             <!-- <v-container> -->
             <v-row>
@@ -95,10 +106,11 @@
                     でも最適化するとなると大人でも大変……。ぜひ挑戦していってください！
                   </p>
                 </v-container>
+
                 <v-btn
                   block
                   href="https://festival.utcode.net/"
-                  class="ma-2"
+                  class="ma-2 align-self-end"
                   target="_blank"
                   rel="noopener noreferrer"
                   >このコンテンツで遊ぶ</v-btn
@@ -109,9 +121,11 @@
           </v-card-item>
         </v-card>
         <v-card>
-          <v-card-title>
-            ML Workshop in はじめてのプログラミング教室
-          </v-card-title>
+          <v-sheet color="grey-lighten-3">
+            <v-card-title>
+              ML Workshop in はじめてのプログラミング教室
+            </v-card-title>
+          </v-sheet>
           <v-card-item>
             <v-row>
               <v-col cols="12" md="6">
@@ -154,7 +168,9 @@
           </v-card-item>
         </v-card>
         <v-card>
-          <v-card-title> First Web Game Maker </v-card-title>
+          <v-sheet color="grey-lighten-3">
+            <v-card-title> First Web Game Maker </v-card-title>
+          </v-sheet>
           <v-card-item>
             <v-row>
               <v-col cols="12" md="6">
@@ -169,7 +185,9 @@
           </v-card-item>
         </v-card>
         <v-card>
-          <v-card-title> タイピングゲーム by ut.code(); </v-card-title>
+          <v-sheet color="grey-lighten-3">
+            <v-card-title> タイピングゲーム by ut.code(); </v-card-title>
+          </v-sheet>
           <v-card-item>
             <v-row>
               <v-col cols="12" md="6">
@@ -201,7 +219,9 @@
           </v-card-item>
         </v-card>
         <v-card>
-          <v-card-title> PL Workshop </v-card-title>
+          <v-sheet color="grey-lighten-3">
+            <v-card-title> PL Workshop </v-card-title>
+          </v-sheet>
           <v-card-item>
             <v-row>
               <v-col cols="12" md="6">
@@ -262,20 +282,22 @@
               では、プログラミングを始めてみたい、新しいスキルを身につけたいという学生を常時募集しています！<br />
               ご興味をお持ちの方は、ぜひご連絡ください！
             </p>
-            <v-btn
-              href="https://twitter.com/utokyo_code"
-              class="ma-2"
-              target="_blank"
-              rel="noopener noreferrer"
-              >公式Twitter</v-btn
-            >
-            <v-btn
-              href="https://line.me/ti/p/%40nlr3843e"
-              class="ma-2"
-              target="_blank"
-              rel="noopener noreferrer"
-              >公式LINE</v-btn
-            >
+            <v-row justify="center" class="ma-2">
+              <v-btn
+                href="https://twitter.com/utokyo_code"
+                class="mx-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                >公式Twitter</v-btn
+              >
+              <v-btn
+                href="https://line.me/ti/p/%40nlr3843e"
+                class="mx-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                >公式LINE</v-btn
+              >
+            </v-row>
           </v-card-item>
         </v-card>
       </v-container>
@@ -302,7 +324,7 @@ import "@mdi/font/css/materialdesignicons.css";
 </script>
 <style>
 .v-card {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .v-col {
   padding: 0px;
