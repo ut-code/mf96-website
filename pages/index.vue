@@ -9,6 +9,17 @@
       <v-toolbar-title>
         ut.code(); 第96回五月祭企画 「あなたのためのプログラミング」
       </v-toolbar-title>
+      <v-btn
+        icon
+        href="https://gogatsusai.jp/96/visitor/kikaku/476/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <v-icon>mdi-vote</v-icon>
+      </v-btn>
+      <v-btn icon href="#kampa">
+        <v-icon>mdi-cash</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container class="pa-2">
@@ -283,6 +294,7 @@
 </template>
 
 <script setup lang="ts">
+import "@mdi/font/css/materialdesignicons.css";
 // const items = [
 //   {
 //     src: "~/assets/images/1.jpg",
