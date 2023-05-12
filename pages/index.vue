@@ -22,7 +22,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p class="d-none d-sm-block">登録する</p>
+        <p class="d-none d-sm-block">投票する</p>
       </v-btn>
       <!-- <v-btn icon href="#kampa">
         <v-icon>mdi-cash</v-icon>
