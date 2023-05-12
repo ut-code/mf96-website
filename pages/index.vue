@@ -55,7 +55,26 @@
         <v-card>
           <v-card-title> はじめてのプログラミング教室 </v-card-title>
           <v-card-item>
-            <v-img src="first-programming-class.jpg" max-width="50%"> </v-img>
+            <v-container>
+              <v-row>
+                <v-col>
+                  <v-img src="first-programming-class.jpg" max-width="50%">
+                  </v-img>
+                  <v-container>
+                    <p>
+                      「はじめてのプログラミング教室」はut.code();
+                      がこれまでの学園祭でも提供してきた、自慢のコンテンツです。
+                    </p>
+                    <p>
+                      ブロックを並べて、積み木感覚で、誰でも簡単にプログラミングに触れることができます。
+                    </p>
+                    <p>
+                      でも最適化するとなると大人でも大変……。ぜひ挑戦していってください！
+                    </p>
+                  </v-container>
+                </v-col>
+              </v-row>
+            </v-container>
             <v-btn block href="https://festival.utcode.net/" class="ma-2"
               >このコンテンツで遊ぶ</v-btn
             >
@@ -132,7 +151,7 @@
           </v-card-item>
         </v-card>
 
-        <v-card>
+        <!-- <v-card>
           <v-card-title id="kampa" class="headline">
             カンパのお願い
             <v-spacer />
@@ -151,13 +170,13 @@
                 が駒場祭をする上でかかった必要経費の補填に充てさせていただきます。
               </li>
             </ul>
-            <!-- <external-button :url="paypayUrl"> PayPay </external-button> -->
+            <external-button :url="paypayUrl"> PayPay </external-button>
             <p>PCからご覧の方は以下の二次元コードを読み取ってください。</p>
             <div justify="center" align="center" width="50%">
               <v-img width="50%" src="/paypay.svg" alt="PayPay二次元コード" />
             </div>
           </v-card-text>
-        </v-card>
+        </v-card> -->
         <v-card class="my-2">
           <v-card-title id="contact" class="headline">
             お問い合わせ
