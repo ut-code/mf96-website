@@ -50,28 +50,26 @@
           ></v-carousel-item>
         </v-carousel>
         <v-card>
-          <!-- <v-container> -->
-          <!-- <v-card-title>あなたのためのプログラミング</v-card-title> -->
           <v-row>
             <v-col cols="12" md="6">
-              <v-card-text>
+              <v-container>
                 <p>ut.code(); の第96回五月祭企画へようこそ！</p>
                 <p>
                   「あなたのためのプログラミング」は、皆さま全員に向けた企画です。<br />
                   プログラマーの方も、プログラミングをやったことがないという方も、お楽しみいただけます。<br />
                   お子さまも、親御さんも、学生さんも、社会人の方も、お楽しみいただけます。
                 </p>
-              </v-card-text>
+              </v-container>
             </v-col>
             <v-col cols="12" md="6">
               <v-card-title>日時</v-card-title>
-              <v-card-text>
+              <v-container>
                 <p>5/13 (土), 5/14 (日) 9:00 〜 18:00</p>
-              </v-card-text>
+              </v-container>
               <v-card-title>場所</v-card-title>
-              <v-card-text>
+              <v-container>
                 <p>工学部 6 号館 2 階 63 号講義室</p>
-              </v-card-text>
+              </v-container>
             </v-col>
           </v-row>
           <!-- </v-container> -->
