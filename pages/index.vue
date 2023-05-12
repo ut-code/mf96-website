@@ -7,9 +7,27 @@
     </v-app-bar>
     <v-main>
       <v-container class="pa-2">
-        <v-carousel :show-arrows="false" class="my-2" height="50vh" cycle>
+        <v-carousel
+          :show-arrows="false"
+          class="my-2 d-none d-sm-block"
+          height="50vh"
+          cycle
+        >
           <v-carousel-item
-            v-for="key in 4"
+            v-for="key in 1"
+            :key="key"
+            :src="'/carousel/' + key + '.jpg'"
+            cover
+          ></v-carousel-item>
+        </v-carousel>
+        <v-carousel
+          :show-arrows="false"
+          class="my-2 d-sm-none"
+          height="30vh"
+          cycle
+        >
+          <v-carousel-item
+            v-for="key in 1"
             :key="key"
             :src="'/carousel/' + key + '.jpg'"
             cover
@@ -36,11 +54,48 @@
         </v-card>
         <v-card>
           <v-card-title> はじめてのプログラミング教室 </v-card-title>
+          <v-card-item>
+            <v-img src="first-programming-class.jpg" max-width="50%"> </v-img>
+            <v-btn block href="https://festival.utcode.net/" class="ma-2"
+              >このコンテンツで遊ぶ</v-btn
+            >
+          </v-card-item>
         </v-card>
         <v-card>
           <v-card-title>
             ML Workshop in はじめてのプログラミング教室
           </v-card-title>
+          <v-card-item>
+            <v-img src="ml-workshop.jpg" max-width="50%"> </v-img>
+            <v-btn
+              href="https://festival.utcode.net/kmeans"
+              class="ma-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >K平均法</v-btn
+            >
+            <v-btn
+              href="https://festival.utcode.net/genetic-algorithm"
+              class="ma-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >遺伝的アルゴリズム</v-btn
+            >
+            <v-btn
+              href="https://festival.utcode.net/qlearning"
+              class="ma-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Q学習</v-btn
+            >
+            <v-btn
+              href="https://festival.utcode.net/gradient-descent"
+              class="ma-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >勾配降下法</v-btn
+            >
+          </v-card-item>
         </v-card>
         <v-card>
           <v-card-title> First Web Game Maker </v-card-title>
@@ -50,9 +105,31 @@
         </v-card>
         <v-card>
           <v-card-title> タイピングゲーム by ut.code(); </v-card-title>
+          <v-card-item>
+            <v-img src="typing-game.jpg" max-width="50%"> </v-img>
+            <v-btn
+              block
+              href="https://typing.utcode.net"
+              class="ma-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >このコンテンツで遊ぶ</v-btn
+            >
+          </v-card-item>
         </v-card>
         <v-card>
           <v-card-title> PL Workshop </v-card-title>
+          <v-card-item>
+            <v-img src="pl-workshop.jpg" max-width="50%"> </v-img>
+            <v-btn
+              block
+              href="https://pl-workshop.github.io/pl-workshop-text/"
+              class="ma-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >このコンテンツで遊ぶ</v-btn
+            >
+          </v-card-item>
         </v-card>
 
         <v-card>
