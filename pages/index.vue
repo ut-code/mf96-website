@@ -302,6 +302,38 @@
         </v-card>
         <v-card>
           <v-sheet color="grey-lighten-3">
+            <v-card-title> Code vs Code </v-card-title>
+          </v-sheet>
+          <v-card-item>
+            <v-row>
+              <v-col cols="12" md="6">
+                <v-img src="code-vs-code.png"> </v-img>
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-container>
+                  <p>
+                    ブロックをならべて、つなげて、自分だけのパイロットAIをプログラムしよう！
+                  </p>
+                  <p>
+                    作ったプログラムで、企画に参加してくださった他の皆さんと対戦できます。
+                  </p>
+                  <p>最強AIの座を手にするのは一体誰だ！？</p>
+                </v-container>
+                <v-btn
+                  block
+                  href="https://code-vs-code.utcode.net/"
+                  class="ma-2"
+                  color="grey-lighten-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >このコンテンツで遊ぶ</v-btn
+                >
+              </v-col>
+            </v-row>
+          </v-card-item>
+        </v-card>
+        <v-card>
+          <v-sheet color="grey-lighten-3">
             <v-card-title> cobuilder </v-card-title>
           </v-sheet>
           <v-card-item>
